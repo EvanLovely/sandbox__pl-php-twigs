@@ -2,8 +2,7 @@
 
 drupalThemeRepo="https://github.com/aleksip/shila-drupal-theme"
 starterkitRepo="http://github.com/aleksip/starterkit-shila-drupal-theme"
-editionRepo="http://github.com/aleksip/edition-php-twig-standard"
-editionBranch="shila-drupal-theme"
+editionRepo="https://github.com/aleksip/edition-php-drupal-standard"
 patternLabFolder="pattern-lab"
 starterKitFolder="starterkit"
 
@@ -30,7 +29,7 @@ cd ..
 echo "==="
 
 echo "==>cloning pattern lab edition..."
-git clone -b $editionBranch $editionRepo $patternLabFolder
+git clone $editionRepo $patternLabFolder
 cd $patternLabFolder
 echo "installing pattern lab deps..."
 composer install
